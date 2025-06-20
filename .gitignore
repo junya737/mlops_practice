@@ -1,0 +1,12 @@
+# Python build artifacts
+__pycache__/
+*.pyc
+
+# Deployment packages
+english-conversation-service/package/
+english-conversation-service/function.zip
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
