@@ -21,4 +21,5 @@ You can invoke the endpoint with a JSON payload:
 ```json
 {"message": "How are you?"}
 ```
-which returns a JSON response with ChatGPT's reply.
+which returns a JSON response with ChatGPT's reply. When using API Gateway,
+send this JSON as the request body so the Lambda function can parse it.
