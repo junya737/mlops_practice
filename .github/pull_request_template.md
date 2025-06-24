@@ -1,1 +1,1 @@
-Review in Japanase
+レビューは日本語で回答してください．
