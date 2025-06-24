@@ -12,7 +12,8 @@ def lambda_handler(event, context):
     if isinstance(event, dict) and 'body' in event:
         try:
             payload = json.loads(event['body'] or '{}')
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            logging.error(f"JSONDecodeError: {e}. Invalid JSON: {event['body']}")
             payload = {}
 
     user_message = payload.get('message', 'Hello')
